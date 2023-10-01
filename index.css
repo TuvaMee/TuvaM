@@ -1,0 +1,528 @@
+body {
+  background-color: rgb(254, 251, 246);
+  text-align: center;
+  color: #0E004E;
+}
+
+
+
+
+/*_------------------ NAVBAR  -------------*/
+
+.hjem {
+  text-decoration: none;
+  color:#0E004E;
+}
+
+.navbar a:hover{
+  transition: .3s ease-in-out;
+  background-color: rgb(248, 115, 66);
+  color:  rgb(252, 246, 235);
+  border-radius: 1.5rem;
+}
+
+
+.navbar a {
+  padding: 20px;
+  color:#0E004E;
+  text-decoration: none;
+  font-size: 25px;
+  flex-wrap: wrap;
+  font-size: clamp(0.7rem, 4vw, 1.0rem);
+  font-weight: 200;  
+  text-decoration: none;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px 0 0 0;
+  height: 90px; 
+  font-size: 24px;
+  text-decoration: none; 
+}
+
+.left {
+  width: 25%;
+  padding-left: 40px;
+  font-size: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.right {
+  width: 75%;
+  padding-right: 40px;
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+}
+
+.row {
+  padding-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-------------------------- FORSIDE ------------------------- */
+
+
+/*_--------------- intro -----------*/
+
+.emoji {
+  font-size: 50px;
+}
+
+.intro {
+  color:#0E004E;
+  text-align: center;
+  height: 400px;
+}
+
+.head-intro {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.head-text {
+  font-family: 'Poppins', sans-serif;
+  padding: 50px 280px 0px 280px;
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 990px){
+  .head-text {
+    font-size: 1.3rem;
+    padding: 50px 80px 0px 80px;;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .head-text {
+    font-size: 1.0rem;
+    padding: 50px 20px 0px 20px;;
+  }
+}
+
+
+
+
+/*_-------------- Project style boxes ---------*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.project-headline { 
+  padding-top: 100px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr);
+  justify-content: center;
+  grid-gap: 2rem;
+  margin: 2rem;
+}
+
+
+
+.container{
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px gray;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  font-weight: 200;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.one #text1:hover{
+  background: rgb(55, 102, 210);
+  transition: .3s ease-in-out;
+  color: #eaeffc
+} 
+
+.one #text1 { 
+  background: rgb(210, 223, 253);
+  font-size: clamp(0.5rem, 3vw, 1rem);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+  border-radius: 1rem;
+  grid-gap: 1.1rem;
+  height: 600px;
+}
+
+
+.two #text1:hover{
+  background: rgb(218, 85, 105);
+  transition: .3s ease-in-out;
+  color: #ffebee;
+}
+
+.two #text1 { 
+  background: #f9d4da;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+  border-radius: 1rem;
+  grid-gap: 1.1rem;
+  font-size: clamp(0.5rem, 3vw, 1rem);
+  height: 600px;
+}
+
+
+.three #text1:hover{
+  background:  rgb(244, 170, 81);
+  transition: .3s ease-in-out;
+  color: #fffdde
+}
+
+.three #text1 { 
+  background:  rgb(252, 225, 192);;
+  font-size: clamp(0.5rem, 3vw, 1rem);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+
+  border-radius: 1rem;
+  grid-gap: 1.1rem;
+  height: 600px;
+}
+
+
+#text1 {
+  padding: 5rem 5rem 2rem 5rem;
+  font-weight: 200;
+  color:#0E004E;
+}
+
+.box_h2{
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+.box-underskrift {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+
+
+.wenches-box-img {
+  max-width: 100%;
+  height: auto;
+  border-Radius: 1rem;
+  transition: .3s ease-in-out;
+}
+
+.container:hover .wenches-box-img {
+  transform: scale(1.1);
+}
+
+
+
+
+
+/*---------- Media screen ---------- */
+
+@media screen and (min-width:700px) {
+  .wrapper-grid {
+      grid-template-columns: repeat(2, 1fr);     
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+  }  
+  .wrapper-grid{
+      padding: 12rem 3vw;
+  }
+}
+
+@media only screen and (max-width: 37.3em) {
+  .wrapper-grid{
+    padding: 12rem 3vw;
+}
+}
+  
+@media only screen and (max-width: 50em) {
+  .wrapper-grid {
+      padding: 6rem 8vw;
+  }
+}
+  
+  
+@media only screen and (max-width: 62.5em){
+  .wrapper-grid {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 8rem 10vw;
+  }
+}
+  
+
+@media only screen and (max-width: 37.5em) {
+  .wrapper-grid {
+      padding: 2vw;
+  }
+}
+  
+@media only screen and (max-width: 650px) and (min-width:670px) {
+  .wrapper-grid {
+      padding: 100px;
+  }
+}
+
+@media only screen and (max-width: 1450px) and (min-width:1200px) {
+    .wrapper-grid {
+        padding: 60px;
+  }
+}
+
+
+
+
+/*-------------------------- PROSJEKT ------------------------- */
+
+
+/* style header */
+.wenche-top-header {
+  background: rgb(210, 223, 253);
+  height:800px;
+}
+
+.craigslist-top-header{
+  background: #f9d4da;
+  height:800px;
+}
+
+
+.project-project-header .ommeg {
+  padding-top: 140px;
+}
+
+.project-header-overskirft {
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+
+.project-header-underskrift {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2.5vh; 
+}
+
+.project-header-trykkher{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.7vh; 
+  padding-top: 40px;
+
+}
+
+.project-header-img  {
+  max-width: 90%;
+  height: auto;
+  overflow: clip;
+  transition: .4s ease-in-out;
+  padding-top: 12px;
+}
+ 
+
+
+.wencheimg:hover {
+  transform: scale(1.064);
+}
+
+.craigslistimg:hover  {
+  transform: scale(1.064);
+}
+
+
+
+
+/* style innledning */
+.project-main {
+  margin-top: 6rem;
+  margin-bottom: 20rem;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.project-article {
+  max-width: 105rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 0rem;
+  text-align: center;
+  padding: 0 70px 0px 70px
+}
+
+
+.project-innledning  {
+  grid-column: 2 / 8;
+  margin-top: 8rem;
+}
+
+
+
+.project-innleding-overskrift {
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.project-innleding-underskrift{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5vh;
+  text-align: left;
+  font-weight: 200;
+}
+
+.project-innleding-overskrift2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: left;
+  padding: 30px 0 10px 0;
+  font-size: 2.8vh;
+}
+
+
+
+/* media screen  */
+
+@media screen and (max-width:1490px) {
+  .project-header-img {
+    width: 680px;
+  }
+  .project-wenche-img {
+    width: 400px;
+   
+  }
+}
+
+@media screen and (max-width:850px) {
+  .project-header-img {
+    width: 600px;
+  }
+  .wenches-header-overskirft {
+    font-size: 30px;  
+  }
+}
+
+@media screen and (max-width:700px) {
+  .project-header-overskirft {
+    font-size: 50px;
+  }
+}
+  
+  
+@media only screen and (max-width: 600px){
+  .project-innledning {
+    grid-column: 1 / 9;
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
+  .project-innleding-underskrift {
+    font-size: 15px;
+  }
+  .project-article {
+    padding: 0 30px 0px 30px
+  
+  }
+} 
+
+@media screen and (max-width:590px) {
+  .project-header-img {
+    width: 600px;
+  }
+  .wenches-header-overskirft {
+    font-size: 60px;  
+  }
+  
+}
+
+
+
+
+  .footer {
+    width: 100vw;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF6E8;
+    font-weight: 300;
+    background-color: rgb(53, 63, 85);
+  }
+
+
+  .footer-img {
+    width: 4rem;
+    margin-right: 1.5rem;
+    overflow: clip;
+    padding-top: 0px;
+  }
+
+
+  .footer-text {
+    padding-top: 120px;
+    font-size: 1.4rem;
+    line-height: 4.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 200;
+  }
+
+  @media screen and (max-width:850px) {
+    .footer {
+      height: 20rem;
+    }
+    .footer-text {
+      font-size: 1.2rem;
+    }
+  }
+
+  .project-img {
+      max-width: 60%;
+      max-height: 60%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 30px;
+  } 
+  
+.project-img-Figma {
+
+  max-width: 100%;
+  max-height: 1000%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+
+
+  @media screen and (max-width:1490px) {
+    .project-img {
+      width: 400px;
+      height: auto;
+  }
+}
+
+  
