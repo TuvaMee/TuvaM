@@ -194,7 +194,18 @@ a {
 }
 
 .three #text1 { 
-  background:  rgb(252, 225, 192);;
+  background:  #fce1c0;;
+  font-size: clamp(0.5rem, 3vw, 1rem);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+
+  border-radius: 1rem;
+  grid-gap: 1.1rem;
+  height: 600px;
+}
+.four #text1 { 
+  background:  rgb(252, 206, 255);;
   font-size: clamp(0.5rem, 3vw, 1rem);
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -225,7 +236,7 @@ a {
 
 
 .wenches-box-img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   border-Radius: 1rem;
   transition: .3s ease-in-out;
@@ -245,6 +256,7 @@ a {
   .wrapper-grid {
       grid-template-columns: repeat(2, 1fr);     
   }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -312,6 +324,12 @@ a {
   height:800px;
 }
 
+.positival-top-header{
+  background: #fce1c0;
+  height:800px;
+  
+}
+
 
 .project-project-header .ommeg {
   padding-top: 140px;
@@ -353,6 +371,10 @@ a {
 .craigslistimg:hover  {
   transform: scale(1.064);
 }
+.positvalimg:hover {
+  transform: scale(1.064);
+}
+
 
 
 
@@ -407,26 +429,39 @@ a {
 
 /* media screen  */
 
-@media screen and (max-width:1490px) {
+@media screen and (max-width:1600px) {
+  .project-header-img {
+    width: 730px;
+  }
+  .project-wenche-img {
+    width: 400px;
+  }
+ 
+}
+
+@media screen and (max-width:1400px) {
   .project-header-img {
     width: 680px;
   }
   .project-wenche-img {
     width: 400px;
-   
   }
 }
+
 
 @media screen and (max-width:850px) {
   .project-header-img {
     width: 600px;
   }
-  .wenches-header-overskirft {
-    font-size: 30px;  
-  }
+  
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:790px) {
+  .project-header-overskirft {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width:740px) {
   .project-header-overskirft {
     font-size: 50px;
   }
@@ -435,28 +470,20 @@ a {
   
 @media only screen and (max-width: 600px){
   .project-innledning {
-    grid-column: 1 / 9;
+    grid-column: 1 / 7;
     margin-left: 7vw;
     margin-right: 7vw;
   }
   .project-innleding-underskrift {
     font-size: 15px;
   }
-  .project-article {
-    padding: 0 30px 0px 30px
-  
-  }
+
+
+
 } 
 
-@media screen and (max-width:590px) {
-  .project-header-img {
-    width: 600px;
-  }
-  .wenches-header-overskirft {
-    font-size: 60px;  
-  }
-  
-}
+
+
 
 
 
@@ -499,8 +526,8 @@ a {
   }
 
   .project-img {
-      max-width: 60%;
-      max-height: 60%;
+      max-width: 70%;
+      max-height: 70%;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -517,11 +544,10 @@ a {
   padding-top: 30px;
 }
 
-
-  @media screen and (max-width:1490px) {
+  @media screen and (max-width:710px) {
     .project-img {
-      width: 400px;
-      height: auto;
+      width: 100%;
+     
   }
 }
 
